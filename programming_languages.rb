@@ -14,7 +14,7 @@ def reformat_languages(languages)
         attr_hash[:style] = arr.uniq
         new_hash[lang] = attr_hash
       end
-      
+
     end
   end
 
