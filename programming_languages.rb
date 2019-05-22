@@ -9,10 +9,12 @@ def reformat_languages(languages)
     lang_hash.each do |lang, attr_hash|
       if lang == ":javascript"
         attr_hash[:style] = languages.keys
+        new_hash[lang] = attr_hash
       elsif languages[style].include?(lang)
         attr_hash[:style] = arr.uniq
+        new_hash[lang] = attr_hash
       end
-      new_hash[lang] = attr_hash
+      
     end
   end
 
