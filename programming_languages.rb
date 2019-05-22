@@ -7,7 +7,7 @@ def reformat_languages(languages)
     arr = []
     arr << style
     lang_hash.each do |lang, attr_hash|
-      if lang == "javascript"
+      if lang == ":javascript"
         attr_hash[:style] = languages.keys
       elsif languages[style].include?(lang)
         attr_hash[:style] = arr.uniq
