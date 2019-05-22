@@ -3,10 +3,10 @@ require 'pry'
 def reformat_languages(languages)
   new_hash = {}
   arr_js = []
-  
+
   languages.each do |style, lang_hash|
     arr = []
-     
+
     #arr << style
     lang_hash.each do |lang, attr_hash|
       if lang == ":javascript"
