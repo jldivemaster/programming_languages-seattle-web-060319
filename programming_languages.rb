@@ -10,7 +10,7 @@ def reformat_languages(languages)
       if lang == ":javascript"
         attr_hash[:style] = languages.keys
         new_hash[lang] = attr_hash
-      elsif languages[style].include?(lang)
+      else #if languages[style].include?(lang)
         attr_hash[:style] = arr.uniq
         new_hash[lang] = attr_hash
       end
